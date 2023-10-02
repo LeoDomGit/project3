@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import"../css/style2.css";
 import { useParams } from "react-router-dom";
 function SingleCourse() {
-    const url = "http://127.0.0.1:8000/api/";
+    const url = "https://students.trungthanhweb.com/api/";
     const [data,setData]=useState({});
     const [module,setModule]= useState([]);
     const { id } = useParams();

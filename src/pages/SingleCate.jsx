@@ -8,7 +8,7 @@ import ImageResize from "quill-image-resize-module-react";
 import Swal from "sweetalert2";
 Quill.register("modules/imageResize", ImageResize);
 function SingleCate() {
-  const url = "http://127.0.0.1:8000/api/";
+  const url = "https://students.trungthanhweb.com/api/";
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",

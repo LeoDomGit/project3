@@ -18,7 +18,7 @@ function CourseCates() {
   const [editEduType, setEdit] = useState(false);
   const [idEdit, setIdEdit] = useState(0);
   const [data, setData] = useState([]);
-  const url = "http://127.0.0.1:8000/api/";
+  const url = "https://students.trungthanhweb.com/api/";
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",

@@ -1,6 +1,6 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 export const getMajors = createAsyncThunk('majors/getMajors' , async ()=>{
-    return fetch("http://127.0.0.1:8000/api/activemajors")
+    return fetch("https://students.trungthanhweb.com/api/activemajors")
     .then((res)=>res.json());
 })
 export const MajorSlice = createSlice({

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import Swal from "sweetalert2";
 function Majors() {
-  const url = "http://127.0.0.1:8000/api/";
+  const url = "https://students.trungthanhweb.com/api/";
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
