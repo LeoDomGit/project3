@@ -99,7 +99,7 @@ function SingleCate() {
           </button>
         </nav>
         <main className="content px-3 py-2">
-          <div className="container-fluid">
+          <div className="container">
             {addCourse && (
               <div className="row mt-2  w-50">
                 <div className="row">
@@ -176,7 +176,7 @@ function SingleCate() {
                   ))}
                 </div>
                 <div className="row">
-                  <div style={{ marginLeft: "-10px" }} className="col-md-6">
+                  <div className="col-md">
                     <button
                       className="btn btn-warning"
                       onClick={handleServiceAdd}
@@ -206,6 +206,9 @@ function SingleCate() {
                         </p>
                         <a href={`/single/${item.id}`} className="btn btn-primary mt-3">
                           Xem thêm
+                        </a>
+                        <a href={`/edit/${item.id}`} className="btn btn-warning mt-3 ms-3">
+                          Sửa đổi
                         </a>
                       </div>
                     </div>

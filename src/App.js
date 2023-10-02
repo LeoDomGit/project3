@@ -9,8 +9,7 @@ import Majors from "./pages/Majors";
 import SingleCate from "./pages/SingleCate";
 import CourseCates from "./pages/CourseCates";
 import SingleCourse from "./pages/SingleCourse";
-
-
+import EditCourse from "./pages/EditCourse";
 function App() {
   return (
     <div className="wrapper">
@@ -20,6 +19,8 @@ function App() {
           <Route path="/cate/:id" element={<CourseCates/>}/>
           <Route path="/course/:id" element={<SingleCate/>}/>
           <Route path="/single/:id" element={<SingleCourse/>}/>
+          <Route path="/edit/:id" element={<EditCourse/>}/>
+
         </Routes>
       </BrowserRouter>
     </div>
