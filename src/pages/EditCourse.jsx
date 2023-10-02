@@ -23,6 +23,9 @@ function EditCourse() {
           toast.addEventListener("mouseleave", Swal.resumeTimer);
         },
     });
+    const deleteModule =  (i)=>{
+        console.log(i);
+    }
     useEffect(()=>{
         axios({
             method: "get",
@@ -69,7 +72,7 @@ function EditCourse() {
                           type="text"
                             value={item.module}
                           className="form-control"
-                        /><button type="button" class="btn btn-danger btn-sm mt-2">Xóa Module</button>
+                        /><button type="button" class="btn btn-danger btn-sm mt-2" onClick={(e)=>deleteModule(index)}>Xóa Module</button>
                       </div>
                       <label htmlFor="" className="mb-2 mt-3">
                         Nội dung
